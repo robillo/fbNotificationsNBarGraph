@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1052268670304",
+    "firebase_url": "https://notifications-and-bar-chart.firebaseio.com",
+    "project_id": "notifications-and-bar-chart",
+    "storage_bucket": "notifications-and-bar-chart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052268670304:android:83718a3f8ae9ae46",
+        "android_client_info": {
+          "package_name": "com.appbusters.robinkamboj.fbnotificationsnbargraph"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052268670304-eojf326o1je3o07ngk7r7idb793scces.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAHwcFhlS9tR18z0_XuKgRqeNmd5UcT5c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
