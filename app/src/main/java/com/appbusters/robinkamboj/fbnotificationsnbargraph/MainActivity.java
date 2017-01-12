@@ -1,5 +1,6 @@
 package com.appbusters.robinkamboj.fbnotificationsnbargraph;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PointF;
@@ -95,6 +96,9 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         // initialize our XYPlot reference:
         plot = (XYPlot) findViewById(R.id.plot);
@@ -483,6 +487,8 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent i = new Intent(this, AuthActivity.class);
+            startActivity(i);
             return true;
         }
 
