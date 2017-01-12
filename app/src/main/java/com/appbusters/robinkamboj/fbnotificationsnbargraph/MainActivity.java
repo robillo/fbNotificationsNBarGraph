@@ -279,8 +279,7 @@ public class MainActivity extends AppCompatActivity {
                                                FieldPosition field) {
                         int year = (int) (value + 0.5d) / 12;
                         int month = (int) ((value + 0.5d) % 12);
-                        return new StringBuffer(DateFormatSymbols.getInstance()
-                                .getShortMonths()[month] + " '0" + year);
+                        return new StringBuffer("  ");
                     }
 
                     @Override
