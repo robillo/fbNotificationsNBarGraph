@@ -22,11 +22,12 @@
     android:orientation="vertical">
 
     <com.androidplot.xy.XYPlot
+        android:layout_marginTop="3sp"
         style="@style/APDefacto.Light"
         android:id="@+id/plot"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        ap:title="Growth"
+        ap:title="Radiation"
         ap:gridInsetLeft="35dp"
         ap:gridInsetRight="10dp"
         ap:gridClippingEnabled="false"

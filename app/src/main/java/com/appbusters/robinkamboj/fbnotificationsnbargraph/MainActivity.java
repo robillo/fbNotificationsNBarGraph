@@ -72,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Create a couple arrays of y-values to plot:
-    Number[] series1Numbers10 = {2, null, 5, 2, 7, 4, 3, 7, 4, 5};
-    Number[] series2Numbers10 = {4, 6, 3, null, 2, 0, 7, 4, 5, 4};
+    Number[] series1Numbers10 = {0.5, null, 0.5, 3.2, 5};
+    Number[] series2Numbers10 = {null, 2.3, 2.8, null, null};
     Number[] series1Numbers20 = {2, null, 5, 2, 7, 4, 3, 7, 4, 5, 7, 4, 5, 8, 5, 3, 6, 3, 9, 3};
     Number[] series2Numbers20 = {4, 6, 3, null, 2, 0, 7, 4, 5, 4, 9, 6, 2, 8, 4, 0, 7, 4, 7, 9};
     Number[] series1Numbers60 = {2, null, 5, 2, 7, 4, 3, 7, 4, 5, 7, 4, 5, 8, 5, 3, 6, 3, 9, 3, 2, null, 5, 2, 7, 4, 3, 7, 4, 5, 7, 4, 5, 8, 5, 3, 6, 3, 9, 3, 2, null, 5, 2, 7, 4, 3, 7, 4, 5, 7, 4, 5, 8, 5, 3, 6, 3, 9, 3};
@@ -93,20 +93,19 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         // initialize our XYPlot reference:
         plot = (XYPlot) findViewById(R.id.plot);
 
-        formatter1 = new MyBarFormatter(Color.rgb(100, 150, 100), Color.LTGRAY);
+        formatter1 = new MyBarFormatter(Color.rgb(100, 100, 150), Color.LTGRAY);
         formatter1.setMarginLeft(PixelUtils.dpToPix(1));
         formatter1.setMarginRight(PixelUtils.dpToPix(1));
-        formatter2 = new MyBarFormatter(Color.rgb(100, 100, 150), Color.LTGRAY);
+        formatter2 = new MyBarFormatter(Color.rgb(100, 150, 100), Color.LTGRAY);
         formatter2.setMarginLeft(PixelUtils.dpToPix(1));
         formatter2.setMarginRight(PixelUtils.dpToPix(1));
-        selectionFormatter = new MyBarFormatter(Color.YELLOW, Color.WHITE);
+        selectionFormatter = new MyBarFormatter(Color.RED, Color.WHITE);
 
         selectionWidget = new TextLabelWidget(plot.getLayoutManager(), NO_SELECTION_TXT,
                 new Size(
