@@ -95,14 +95,14 @@
 
         <CheckBox
             android:id="@+id/s1CheckBox"
-            android:text="Series 1"
+            android:text="Man-Made Sources"
             android:checked="true"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"/>
 
         <CheckBox
             android:id="@+id/s2CheckBox"
-            android:text="Series 2"
+            android:text="Natural Sources"
             android:checked="true"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"/>

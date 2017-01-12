@@ -72,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Create a couple arrays of y-values to plot:
-    Number[] series1Numbers10 = {0.5, null, 0.5, 3.2, 5};
-    Number[] series2Numbers10 = {null, 2.3, 2.8, null, null};
+    Number[] series1Numbers10 = {100, null, 100, 595, 800};
+    Number[] series2Numbers10 = {null, 480, 580, null, null};
     Number[] series1Numbers20 = {2, null, 5, 2, 7, 4, 3, 7, 4, 5, 7, 4, 5, 8, 5, 3, 6, 3, 9, 3};
     Number[] series2Numbers20 = {4, 6, 3, null, 2, 0, 7, 4, 5, 4, 9, 6, 2, 8, 4, 0, 7, 4, 7, 9};
     Number[] series1Numbers60 = {2, null, 5, 2, 7, 4, 3, 7, 4, 5, 7, 4, 5, 8, 5, 3, 6, 3, 9, 3, 2, null, 5, 2, 7, 4, 3, 7, 4, 5, 7, 4, 5, 8, 5, 3, 6, 3, 9, 3, 2, null, 5, 2, 7, 4, 3, 7, 4, 5, 7, 4, 5, 8, 5, 3, 6, 3, 9, 3};
@@ -304,9 +304,9 @@ public class MainActivity extends AppCompatActivity {
 
         // Setup our Series with the selected number of elements
         series1 = new SimpleXYSeries(Arrays.asList(series1Numbers),
-                SimpleXYSeries.ArrayFormat.Y_VALS_ONLY, "Us");
+                SimpleXYSeries.ArrayFormat.Y_VALS_ONLY, "Man-Made");
         series2 = new SimpleXYSeries(Arrays.asList(series2Numbers),
-                SimpleXYSeries.ArrayFormat.Y_VALS_ONLY, "Them");
+                SimpleXYSeries.ArrayFormat.Y_VALS_ONLY, "Natural");
 
         plot.setDomainBoundaries(-1, series1.size(), BoundaryMode.FIXED);
         plot.setRangeUpperBoundary(
